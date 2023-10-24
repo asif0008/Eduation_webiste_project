@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- AOS animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fonts awesome cdn -->
+  <script src="https://kit.fontawesome.com/69e5c35177.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Home Page -->
@@ -55,7 +59,7 @@
     </header>
     <main>
         <!-- Hero Section -->
-        <div class="container-fluid px-0 position-relative">
+        <div class="container-fluid px-0 position-relative" data-aos="fade-up">
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
                 <div class="parallax-bg" data-swiper-parallax="-23%" style="background-image: url(/Images/bg-img.png);"></div>
                 <div class="swiper-wrapper">
@@ -114,7 +118,7 @@
                 <div class="swiper-pagination"></div>
         </div>
         <!-- News and Updates section -->
-        <div class="container-fluid py-5 my-0 my-md-3">
+        <div class="container-fluid py-5 my-0 my-md-3" data-aos="zoom-out-right">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -160,7 +164,7 @@
             </div>
         </div>
         <!-- Feature Section -->
-        <div class="container-fluid py-5">
+        <div class="container-fluid py-5" data-aos="zoom-in">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-5">
@@ -206,7 +210,7 @@
             </div>
         </div>
         <!-- Testimonials -->
-        <div class="container-fluid py-5 my-0 my-md-4">
+        <div class="container-fluid py-5 my-0 my-md-4" data-aos="zoom-out">
             <div class="container">
                 <div class="row mr-0 ml-0">
                     <div class="col-lg-6 col-12">
@@ -247,6 +251,64 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
+    <footer class="container-fluid pt-5 mt-0 mt-md-4 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#"><h3 class="fs-4 text-primary">Logo</h3></a>
+                    <p class="text-secondary fw-light mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo dolorem odio ducimus at, placeat vero.</p>
+                    <div class="d-flex align-items-center">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" fill="white"></rect>
+                                <path d="M25.8188 23H23.4751V30H20.3501V23H17.7876V20.125H20.3501V17.9062C20.3501 15.4062 21.8501 14 24.1313 14C25.2251 14 26.3813 14.2188 26.3813 14.2188V16.6875H25.1001C23.8501 16.6875 23.4751 17.4375 23.4751 18.25V20.125H26.2563L25.8188 23Z" fill="#565764"></path>
+                                <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" stroke="white"></rect>
+                                </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                                <rect x="1.02002" y="0.5" width="43" height="43" rx="21.5" fill="white"></rect>
+                                <path d="M22.6201 18.4062C24.5889 18.4062 26.2139 20.0312 26.2139 22C26.2139 24 24.5889 25.5938 22.6201 25.5938C20.6201 25.5938 19.0264 24 19.0264 22C19.0264 20.0312 20.6201 18.4062 22.6201 18.4062ZM22.6201 24.3438C23.9014 24.3438 24.9326 23.3125 24.9326 22C24.9326 20.7188 23.9014 19.6875 22.6201 19.6875C21.3076 19.6875 20.2764 20.7188 20.2764 22C20.2764 23.3125 21.3389 24.3438 22.6201 24.3438ZM27.1826 18.2812C27.1826 18.75 26.8076 19.125 26.3389 19.125C25.8701 19.125 25.4951 18.75 25.4951 18.2812C25.4951 17.8125 25.8701 17.4375 26.3389 17.4375C26.8076 17.4375 27.1826 17.8125 27.1826 18.2812ZM29.5576 19.125C29.6201 20.2812 29.6201 23.75 29.5576 24.9062C29.4951 26.0312 29.2451 27 28.4326 27.8438C27.6201 28.6562 26.6201 28.9062 25.4951 28.9688C24.3389 29.0312 20.8701 29.0312 19.7139 28.9688C18.5889 28.9062 17.6201 28.6562 16.7764 27.8438C15.9639 27 15.7139 26.0312 15.6514 24.9062C15.5889 23.75 15.5889 20.2812 15.6514 19.125C15.7139 18 15.9639 17 16.7764 16.1875C17.6201 15.375 18.5889 15.125 19.7139 15.0625C20.8701 15 24.3389 15 25.4951 15.0625C26.6201 15.125 27.6201 15.375 28.4326 16.1875C29.2451 17 29.4951 18 29.5576 19.125ZM28.0576 26.125C28.4326 25.2188 28.3389 23.0312 28.3389 22C28.3389 21 28.4326 18.8125 28.0576 17.875C27.8076 17.2812 27.3389 16.7812 26.7451 16.5625C25.8076 16.1875 23.6201 16.2812 22.6201 16.2812C21.5889 16.2812 19.4014 16.1875 18.4951 16.5625C17.8701 16.8125 17.4014 17.2812 17.1514 17.875C16.7764 18.8125 16.8701 21 16.8701 22C16.8701 23.0312 16.7764 25.2188 17.1514 26.125C17.4014 26.75 17.8701 27.2188 18.4951 27.4688C19.4014 27.8438 21.5889 27.75 22.6201 27.75C23.6201 27.75 25.8076 27.8438 26.7451 27.4688C27.3389 27.2188 27.8389 26.75 28.0576 26.125Z" fill="#565764"></path>
+                                <rect x="1.02002" y="0.5" width="43" height="43" rx="21.5" stroke="white"></rect>
+                                </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h3 class="fs-4">Useful Links</h3>
+                    <a class="d-block mt-3 text-secondary" href="#">Home</a>
+                    <a class="d-block mt-3 text-secondary" href="#">About</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Courses</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Resources</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Contact</a>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h3 class="fs-4">Resources</h3>
+                    <a class="d-block mt-3 text-secondary" href="#">Student Research</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Help</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Sign In</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Terms & Condition</a>
+                    <a class="d-block mt-3 text-secondary" href="#">Privacy & Policy</a>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="fs-4">Subscribe</h3>
+                    <div class="mt-3">
+                        <div class="h3 fs-6">Subscribe for updates and exclusive offers. Join us today</div>
+                        <div class="d-flex align-items-center justify-content-between footer-inputs mt-3">
+                            <input class="input" type="email" name="email" id="email">
+                            <input class="submit" type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-5">
+                <div class="col-12">
+                    <p class="text-secondary text-center">© 2023 <a href="#" class="text-primary">Education Website</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -254,6 +316,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- AOS animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

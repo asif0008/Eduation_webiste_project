@@ -74,3 +74,31 @@ a {
 .carousel-control-next {
     left: 12% !important;
 }
+/* Aos Animation css */
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1s !important;
+}
+/* footer */
+.footer-links a:hover {
+    color: #0d6efd !important;
+    transition: color .5s;
+}
+.footer-inputs .input, .submit {
+    border: none;
+    background: transparent;
+}
+.footer-inputs {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px;
+    border-radius: 25px;
+}
+.footer-inputs .submit {
+    background: #0d6efd;
+    border-radius: 25px;
+    padding: 5px 8px;
+    color: white;
+    font-size: 13px;
+}
+.footer-inputs .input:focus {
+    outline: none;
+}
