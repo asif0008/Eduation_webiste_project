@@ -11,154 +11,150 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <!-- AOS animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- fonts awesome cdn -->
-  <script src="https://kit.fontawesome.com/69e5c35177.js" crossorigin="anonymous"></script>
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- Home Page -->
-    <header class="container-fluid bg-primary text-white">
+    <header class="container-fluid text-white">
         <section class="container">
             <div class="row">
                 <div class="col-3 col-md-3 mt-3">
                     <a href="#" class="logo fw-bolder">Logo</a>
                 </div>
                 <div class="col-9 col-md-9 text-end">
-                    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <nav class="navbar navbar-expand-lg navbar-dark d-flex align-items-center justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
                             <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse align-items-end justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">About</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Courses</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Resources</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Student Research Help Center</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Sign Up</a>
-                              </li>
-                            </ul>
-                          </div>
-                      </nav>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Courses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Noticeboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item mt-2 mb-4 my-lg-0">
+                                        <a class="nav-link sign-in-btn d-inline" href="#">Sign In</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link sign-in-btn d-inline" href="#">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>                    
                 </div>
             </div>
         </section>
     </header>
     <main>
         <!-- Hero Section -->
-        <div class="container-fluid px-0 position-relative" data-aos="fade-up">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-                <div class="parallax-bg" data-swiper-parallax="-23%" style="background-image: url(/Images/bg-img.png);"></div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <h1 class="title text-primary fw-bolder" data-swiper-parallax="-300">Admissions</h1>
-                    <div class="subtitle text-dark fw-bold" data-swiper-parallax="-200">Chase your dream</div>
-                    <div class="text text-dark mt-4" data-swiper-parallax="-100">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                        laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                        Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                        Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                        ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                        tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                      </p>
-                      <button class="btn btn-primary">Know More</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title text-primary fw-bolder" data-swiper-parallax="-300">Scholarships</div>
-                    <div class="subtitle text-dark fw-bold" data-swiper-parallax="-200">Subtitle</div>
-                    <div class="text text-dark mt-4" data-swiper-parallax="-100">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                        laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                        Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                        Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                        ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                        tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                      </p>
-                      <button class="btn btn-primary">Know More</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="title text-primary fw-bolder" data-swiper-parallax="-300">Short Courses</div>
-                    <div class="subtitle text-dark fw-bold" data-swiper-parallax="-200">Subtitle</div>
-                    <div class="text text-dark mt-4" data-swiper-parallax="-100">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                        laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                        Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                        Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                        ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                        tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                      </p>
-                      <button class="btn btn-primary">Know More</button>
-                    </div>
-                  </div>
-                  </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper container-fluid">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide slide-one" data-aos="fade-up">
+                <div class="container py-5 my-5 d-flex flex-column align-items-start justify-content-start">
+                    <h1 class="fs-1">Admissions</h1>
+                    <h2 class="fs-4">Hurry up, fast</h2>
+                    <p class="fw-light text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dolores unde placeat reiciendis nisi necessitatibus, quos rerum ea, pariatur modi ab totam vel minus, <br> quae labore neque alias aliquid accusamus officia!</p>
+                    <button class="btn btn-warning">Know More</button>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-slide slide-two">
+                <div class="container py-5 my-5 d-flex flex-column align-items-start justify-content-start">
+                    <h1 class="fs-1">Admissions</h1>
+                    <h2 class="fs-4">Hurry up, fast</h2>
+                    <p class="fw-light text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dolores unde placeat reiciendis nisi necessitatibus, quos rerum ea, pariatur modi ab totam vel minus, <br> quae labore neque alias aliquid accusamus officia!</p>
+                    <button class="btn btn-warning">Know More</button>
+                </div>
+            </div>
+            <div class="swiper-slide slide-one">
+                <div class="container py-5 my-5 d-flex flex-column align-items-start justify-content-start">
+                    <h1 class="fs-1">Admissions</h1>
+                    <h2 class="fs-4">Hurry up, fast</h2>
+                    <p class="fw-light text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dolores unde placeat reiciendis nisi necessitatibus, quos rerum ea, pariatur modi ab totam vel minus, <br> quae labore neque alias aliquid accusamus officia!</p>
+                    <button class="btn btn-warning">Know More</button>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
         <!-- News and Updates section -->
         <div class="container-fluid py-5 my-0 my-md-3" data-aos="zoom-out-right">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <h3 class="text-white text-center px-3 py-2 bg-primary mb-0 rounded-top">News and Updates</h3>
-                        <a href="#">
-                            <div class="d-flex align-items-start justify-content-start gap-3 bg-light pt-4 border px-3 pb-3 rounded-bottom">
-                                <img class="rounded-1" src="/Images/pexels-polina-zimmerman-3747468.jpg" width="100px" height="200px" style="object-fit: cover;">
+                    <div class="col-lg-4 h-100">
+                        <h3 class="text-white text-center px-3 py-2 mb-0 rounded-top bg-warning">News and Updates</h3>
+                        <div class="bg-light pt-4 border px-3 pb-3 rounded-bottom">
+                            <div class="d-flex align-items-start justify-content-start gap-3">
+                                <img class="rounded-1" src="/Images/pexels-polina-zimmerman-3747468.jpg" width="100px" height="100px" style="object-fit: cover;">
                                 <div class="d-flex flex-column justify-content-start">
-                                    <h3 class="fs-5">Want to learn how to deliver engaging online training in research writing?</h3>
-                                    <p class="fw-light">Register now to join this free online bootcamp for facilitators. Limited spaces.</p>
-                                    <span class="fs-6">Oct. 17, 2023</span>
+                                    <a href="#"><h3 class="fs-5">Want to learn how to deliver engaging online training in research writing?</h3></a>
+                                    <p class="fw-light mb-1">Register now to join this free online bootcamp for facilitators. Limited spaces.</p>
+                                    <p class="fw-light" style="font-size: 13px;">Oct. 17, 2023</p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="row mt-3">
+                                <div class="col text-center">
+                                    <button class="btn btn-warning">Read More</button>
+                                </div>
+                            </div>
+                        </div>   
                     </div>
-                    <div class="col-lg-4 mt-4 mt-lg-0">
-                        <h3 class="text-white text-center px-3 py-2 bg-primary mb-0 rounded-top">Online Courses</h3>
-                        <a href="#">
-                            <div class="d-flex align-items-start justify-content-start gap-3 bg-light pt-4 border px-3 pb-3 rounded-bottom">
-                                <img class="rounded-1" src="/Images/pexels-hatice-baran-13617521.jpg" width="100px" height="200px" style="object-fit: cover;">
+                    <div class="col-lg-4 h-100">
+                        <h3 class="text-white text-center px-3 py-2 mb-0 bg-warning rounded-top">Online Courses</h3>
+                        <div class="bg-light pt-4 border px-3 pb-3 rounded-bottom">
+                            <div class="d-flex align-items-start justify-content-start gap-3">
+                                <img class="rounded-1" src="/Images/pexels-polina-zimmerman-3747468.jpg" width="100px" height="100px" style="object-fit: cover;">
                                 <div class="d-flex flex-column justify-content-start">
-                                    <h3 class="fs-5">Want to learn how to deliver engaging online training in research writing?</h3>
-                                    <p class="fw-light">Register now to join this free online bootcamp for facilitators. Limited spaces.</p>
-                                    <button class="btn btn-primary">Enroll Now</button>
+                                    <a href="#"><h3 class="fs-5">Want to learn how to deliver engaging online training in research writing?</h3></a>
+                                    <p class="fw-light mb-1">Register now to join this free online bootcamp for facilitators. Limited spaces.</p>
+                                    <p class="fw-light" style="font-size: 13px;">Oct. 17, 2023</p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="row mt-3">
+                                <div class="col text-center">
+                                    <button class="btn btn-warning">Read More</button>
+                                </div>
+                            </div>
+                        </div>   
                     </div>
-                    <div class="col-lg-4 mt-4 mt-lg-0">
-                        <h3 class="text-white text-center px-3 py-2 bg-primary mb-0 rounded-top">Journal</h3>
-                        <a href="#">
-                            <div class="d-flex align-items-start justify-content-start gap-3 bg-light pt-4 border px-3 pb-3 rounded-bottom">
-                                <img class="rounded-1" src="/Images/pexels-polina-zimmerman-3747468.jpg" width="100px" height="200px" style="object-fit: cover;">
+                    <div class="col-lg-4 h-100">
+                        <h3 class="text-white text-center px-3 py-2 mb-0 rounded-top bg-warning">Journal</h3>
+                        <div class="bg-light pt-4 border px-3 pb-3 rounded-bottom">
+                            <div class="d-flex align-items-start justify-content-start gap-3">
+                                <img class="rounded-1" src="/Images/pexels-polina-zimmerman-3747468.jpg" width="100px" height="100px" style="object-fit: cover;">
                                 <div class="d-flex flex-column justify-content-start">
-                                    <h3 class="fs-5">Want to learn how to deliver engaging online training in research writing?</h3>
-                                    <p class="fw-light">Register now to join this free online bootcamp for facilitators. Limited spaces.</p>
-                                    <span class="fs-6">Oct. 17, 2023</span>
+                                    <a href="#"><h3 class="fs-5">Want to learn how to deliver engaging online training in research writing?</h3></a>
+                                    <p class="fw-light mb-1">Register now to join this free online bootcamp for facilitators. Limited spaces.</p>
+                                    <p class="fw-light" style="font-size: 13px;">Oct. 17, 2023</p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="row mt-3">
+                                <div class="col text-center">
+                                    <button class="btn btn-warning">Read More</button>
+                                </div>
+                            </div>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -166,7 +162,7 @@
         <!-- Feature Section -->
         <div class="container-fluid py-5" data-aos="zoom-in">
             <div class="container">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-12 mb-5">
                         <h3 class="fs-2 text-center">FEATURED EVENTS</h3>
                     </div>
@@ -174,9 +170,9 @@
                         <div class="shadow border rounded">
                             <img class="rounded-top" src="/Images/pexels-oliver-mussiett-639172.jpg" alt="" width="100%">
                         <div class="d-flex align-items-start justify-content-start">
-                            <p class="bg-success text-white p-2 d-grid align-items-center">September 2023</p>
+                            <p class="bg-warning text-white p-2 d-grid align-items-center">September 2023</p>
                             <div class="d-flex flex-column pt-3 text-center">
-                                <h3 class="fs-4">Declamation Competition</h3>
+                                <a href="#"><h3 class="fs-4">Declamation Competition</h3></a>
                                 <p>Declamation Competition in collabration with Nab</p>
                             </div>
                         </div>
@@ -186,9 +182,9 @@
                         <div class="shadow border rounded">
                             <img class="rounded-top" src="/Images/pexels-tima-miroshnichenko-5439453.jpg" alt="" width="100%">
                         <div class="d-flex align-items-start justify-content-start">
-                            <p class="bg-success text-white p-2 d-grid align-items-center">September 2023</p>
+                            <p class="bg-warning text-white p-2 d-grid align-items-center">September 2023</p>
                             <div class="d-flex flex-column pt-3 text-center">
-                                <h3 class="fs-4">Recruitment Drive Sin</h3>
+                                <a href="#"><h3 class="fs-4">Recruitment Drive Sin</h3></a>
                                 <p>Bank Al-Falah Recruitment Drive</p>
                             </div>
                         </div>
@@ -198,9 +194,9 @@
                         <div class="shadow border rounded">
                             <img class="rounded-top" src="/Images/pexels-oliver-mussiett-639172.jpg" alt="" width="100%">
                         <div class="d-flex align-items-start justify-content-start">
-                            <p class="bg-success text-white p-2 d-grid align-items-center">September 2023</p>
+                            <p class="bg-warning text-white p-2 d-grid align-items-center">September 2023</p>
                             <div class="d-flex flex-column pt-3 text-center">
-                                <h3 class="fs-4">Declamation Competition</h3>
+                                <a href="#"><h3 class="fs-4">Declamation Competition</h3></a>
                                 <p>Declamation Competition in collabration with Nab</p>
                             </div>
                         </div>
@@ -256,22 +252,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="#"><h3 class="fs-4 text-primary">Logo</h3></a>
+                    <a href="#"><h3 class="fs-4">Logo</h3></a>
                     <p class="text-secondary fw-light mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo dolorem odio ducimus at, placeat vero.</p>
-                    <div class="d-flex align-items-center">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                                <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" fill="white"></rect>
-                                <path d="M25.8188 23H23.4751V30H20.3501V23H17.7876V20.125H20.3501V17.9062C20.3501 15.4062 21.8501 14 24.1313 14C25.2251 14 26.3813 14.2188 26.3813 14.2188V16.6875H25.1001C23.8501 16.6875 23.4751 17.4375 23.4751 18.25V20.125H26.2563L25.8188 23Z" fill="#565764"></path>
-                                <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" stroke="white"></rect>
-                                </svg>
+                    <div class="d-flex align-items-center social-links" style="gap: 1rem;">
+                        <a href="#" class="bg-warning px-2 py-1 rounded-circle">
+                            <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
-                                <rect x="1.02002" y="0.5" width="43" height="43" rx="21.5" fill="white"></rect>
-                                <path d="M22.6201 18.4062C24.5889 18.4062 26.2139 20.0312 26.2139 22C26.2139 24 24.5889 25.5938 22.6201 25.5938C20.6201 25.5938 19.0264 24 19.0264 22C19.0264 20.0312 20.6201 18.4062 22.6201 18.4062ZM22.6201 24.3438C23.9014 24.3438 24.9326 23.3125 24.9326 22C24.9326 20.7188 23.9014 19.6875 22.6201 19.6875C21.3076 19.6875 20.2764 20.7188 20.2764 22C20.2764 23.3125 21.3389 24.3438 22.6201 24.3438ZM27.1826 18.2812C27.1826 18.75 26.8076 19.125 26.3389 19.125C25.8701 19.125 25.4951 18.75 25.4951 18.2812C25.4951 17.8125 25.8701 17.4375 26.3389 17.4375C26.8076 17.4375 27.1826 17.8125 27.1826 18.2812ZM29.5576 19.125C29.6201 20.2812 29.6201 23.75 29.5576 24.9062C29.4951 26.0312 29.2451 27 28.4326 27.8438C27.6201 28.6562 26.6201 28.9062 25.4951 28.9688C24.3389 29.0312 20.8701 29.0312 19.7139 28.9688C18.5889 28.9062 17.6201 28.6562 16.7764 27.8438C15.9639 27 15.7139 26.0312 15.6514 24.9062C15.5889 23.75 15.5889 20.2812 15.6514 19.125C15.7139 18 15.9639 17 16.7764 16.1875C17.6201 15.375 18.5889 15.125 19.7139 15.0625C20.8701 15 24.3389 15 25.4951 15.0625C26.6201 15.125 27.6201 15.375 28.4326 16.1875C29.2451 17 29.4951 18 29.5576 19.125ZM28.0576 26.125C28.4326 25.2188 28.3389 23.0312 28.3389 22C28.3389 21 28.4326 18.8125 28.0576 17.875C27.8076 17.2812 27.3389 16.7812 26.7451 16.5625C25.8076 16.1875 23.6201 16.2812 22.6201 16.2812C21.5889 16.2812 19.4014 16.1875 18.4951 16.5625C17.8701 16.8125 17.4014 17.2812 17.1514 17.875C16.7764 18.8125 16.8701 21 16.8701 22C16.8701 23.0312 16.7764 25.2188 17.1514 26.125C17.4014 26.75 17.8701 27.2188 18.4951 27.4688C19.4014 27.8438 21.5889 27.75 22.6201 27.75C23.6201 27.75 25.8076 27.8438 26.7451 27.4688C27.3389 27.2188 27.8389 26.75 28.0576 26.125Z" fill="#565764"></path>
-                                <rect x="1.02002" y="0.5" width="43" height="43" rx="21.5" stroke="white"></rect>
-                                </svg>
+                        <a href="#" class="bg-warning px-2 py-1 rounded-circle">
+                            <i class="bi bi-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -304,7 +292,7 @@
             </div>
             <div class="row mt-5 pt-5">
                 <div class="col-12">
-                    <p class="text-secondary text-center">© 2023 <a href="#" class="text-primary">Education Website</a>. All rights reserved.</p>
+                    <p class="text-secondary text-center">© 2023 <a href="#" class="text-dark">Education Website</a>. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -314,6 +302,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- AOS animation -->
