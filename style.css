@@ -41,6 +41,9 @@ header {
 .offcanvas-header {
     background-color: #545454 !important;
 }
+.modal-content {
+    padding: 15px;
+}
 /* Hero section Swiper css  */
   .swiper-slide {
     text-align: center;
